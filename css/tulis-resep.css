@@ -1,0 +1,116 @@
+body#tulis-resep {
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+input:focus {
+    border-bottom: 2px solid var(--accent) !important;
+}
+
+#recipe-form__container {
+    width: 100%;
+    max-width: 700px;
+    padding-top: calc(var(--header-height) + 2rem);
+    margin-left: var(--sidebar-width);
+}
+
+#form-tambah-resep > * {
+    margin-bottom: 3rem;
+}
+
+#form-tambah-resep label,
+#lama-pengerjaan__container h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#form-tambah-resep input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--grey);
+    margin-top: 0.5rem;
+}
+
+#form-tambah-resep section > * {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-tambah-resep textarea {
+    border: 1px solid lightgrey;
+}
+
+#foto-resep {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#foto-resep div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #757575;
+}
+
+#foto-resep .title {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+#foto-resep .subtitle {
+    font-size: 0.8rem;
+}
+#porsi,
+#lama-pengerjaan__container,
+#lama-pengerjaan label {
+    display: flex;
+    flex-direction: row;
+}
+
+#porsi span,
+#lama-pengerjaan__container > label {
+    text-transform: none;
+    font-weight: 400;
+}
+#porsi input,
+#lama-pengerjaan__container input {
+    width: 50px;
+    margin: 0 6px 0 1.5rem;
+}
+
+#ingredients,
+#steps {
+    display: flex;
+    flex-direction: column;
+}
+
+button.tambah {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 1rem;
+    width: fit-content;
+    margin-bottom: 0 !important;
+}
+
+button.tambah:hover {
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+}
+
+#tulis-resep footer {
+    padding-left: 250px;
+}

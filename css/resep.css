@@ -1,0 +1,93 @@
+body#body-resep {
+    flex-direction: column;
+}
+
+#recipe-main-container {
+    max-width: 700px;
+}
+
+#recipe-main-container > * {
+    margin-bottom: 2rem;
+}
+
+#recipe-main-container h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#recipe-title {
+    font-family: Merriweather;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+#recipe-main-container .score-wrapper {
+    margin-bottom: 2rem;
+}
+
+#recipe-main-container .other-info {
+    margin-bottom: 3rem;
+}
+
+.other-info-head {
+    color: rgb(168, 50, 14);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+#recipe-main-container .other-info-title {
+    font-size: 1.7rem;
+}
+
+.other-info-title span {
+    color: var(--darkgrey);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+#recipe-summary {
+    line-height: 2rem;
+    text-align: justify;
+}
+ol {
+    margin: 0 0 0 2.15em;
+    padding: 0;
+    counter-reset: steps-counter;
+}
+ol > li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 0.5em;
+    min-height: 3em;
+    padding-top: 5px;
+}
+
+ol > li::before {
+    position: absolute;
+    left: -2rem;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 100%;
+    content: counter(steps-counter);
+    counter-increment: steps-counter;
+}
+
+#recipe-instructions {
+    margin-bottom: 4rem;
+}
+
+#recipe-source span {
+    color: var(--txt-color);
+    margin-right: 10px;
+}
+
+#body-resep footer {
+    padding-left: 250px;
+}
