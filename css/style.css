@@ -237,6 +237,10 @@ button.resep:hover {
     flex-direction: column;
 }
 
+#content-container a:visited {
+    color: var(--txt-color);
+}
+
 .section-wrapper {
     margin: 1.25rem 0;
 }
